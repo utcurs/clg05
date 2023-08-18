@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #b3e9f3;
+    }
+    
+    #container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #d2c4d4;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 13x;
+      margin-bottom: 15px;
+      border: 1px solid #2a4388;
+      border-radius: 5px;
+    }
+    
+    input[type="file"] {
+      margin-top: 5px;
+    }
+    
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Employee Registration</h1>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" required>
+      
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" name="last_name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="address1">Address 1:</label>
+      <input type="text" id="address1" name="address1" required>
+      
+      <label for="address2">Address 2:</label>
+      <input type="text" id="address2" name="address2">
+      
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+      
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required>
+      
+      <label for="zip">Zip:</label>
+      <input type="text" id="zip" name="zip" required>
+      
+      <label for="photo">Upload Photo:</label>
+      <input type="file" id="photo" name="photo">
+      
+      <label for="mobile">Mobile:</label>
+      <input type="tel" id="mobile" name="mobile" required>
+      
+      <label for="language">Languages Known:</label>
+      <input type="text" id="language" name="language">
+      
+      <label for="additional_info">Additional Information:</label>
+      <textarea id="additional_info" name="additional_info" rows="4"></textarea>
+      
+
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
+
